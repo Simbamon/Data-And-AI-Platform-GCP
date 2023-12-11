@@ -1,2 +1,4 @@
 *.zip
-training_dataset
+val2017
+style_image.jpg
+cuda_trained_model
