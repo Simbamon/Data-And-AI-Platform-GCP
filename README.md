@@ -45,3 +45,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [fast-neural-style-pytorch by rrmina](https://github.com/rrmina/fast-neural-style-pytorch)
+* [vertex-ai-mlops by statmike](https://github.com/statmike/vertex-ai-mlops)
