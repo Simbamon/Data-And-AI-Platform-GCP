@@ -1,0 +1,11 @@
+{
+    "host": "<YOUR_HOST_NAME>",
+    "client_id_web": "<YOUR_CLIENT_ID_WEB>",
+    "namespace": "<YOUR_NAMESPACE>",
+    "client_id_desktop": "<YOUR_CLIENT_ID_DESKTOP>",
+    "client_secret_desktop": "<YOUR_CLIENT_SECRET_DESKTOP>"
+}
+
+
+
+
