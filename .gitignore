@@ -1,4 +1,3 @@
 *.zip
-val2017
-style_image.jpg
-cuda_trained_model
+cuda
+.ipynb_checkpoints
