@@ -45,3 +45,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 * Github [fast-neural-style-pytorch by rrmina](https://github.com/rrmina/fast-neural-style-pytorch)
 * Github [vertex-ai-mlops by statmike](https://github.com/statmike/vertex-ai-mlops)
 * Github [fcc-intro-to-llms by Infatoshi](https://github.com/Infatoshi/fcc-intro-to-llms)
+* Github [RayTutorial by ClarityCoders](https://github.com/ClarityCoders/RayTutorial/tree/master)
