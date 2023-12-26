@@ -40,9 +40,10 @@ Below are step-by-step instructions on how to copy the sample notebook in Kubefl
 
 This project is licensed under the MIT License - see the LICENSE file for details
 
-## Acknowledgments
+## Reference
 
 * Github [fast-neural-style-pytorch by rrmina](https://github.com/rrmina/fast-neural-style-pytorch)
 * Github [vertex-ai-mlops by statmike](https://github.com/statmike/vertex-ai-mlops)
 * Github [fcc-intro-to-llms by Infatoshi](https://github.com/Infatoshi/fcc-intro-to-llms)
 * Github [RayTutorial by ClarityCoders](https://github.com/ClarityCoders/RayTutorial/tree/master)
+* Blog [Saturn Cloud](https://saturncloud.io/blog/getting-started-with-ray-clusters/)
