@@ -13,7 +13,7 @@ Following these instructions will help you set up and run a project for developm
 ### Prerequisites
 
 * Google Cloud Platform
-* Kubeflow on Google Kubernetes Engine
+* [Kubeflow](https://github.com/googlecloudplatform/kubeflow-distribution) on Google Kubernetes Engine
     - Kubeflow version: 1.7.0
     - Python version: 3.8.10
 * Ray Cluster (w/KubeRay Operator)
@@ -47,3 +47,23 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 * Github [fcc-intro-to-llms by Infatoshi](https://github.com/Infatoshi/fcc-intro-to-llms)
 * Github [RayTutorial by ClarityCoders](https://github.com/ClarityCoders/RayTutorial/tree/master)
 * Blog [Saturn Cloud](https://saturncloud.io/blog/getting-started-with-ray-clusters/)
+
+## Issues
+
+* Fails to delploy Kubeflow with make-apply
+   - Error: `parsing time "null" as "2006-01-02T15:04:05Z07:00": cannot parse "null" as "2006"`
+   - Fix: Remove `creationTimestamp: null`
+   ```
+   # in "kubeflow-distribution/kubeflow/apps/profiles/upstream/crd/bases/kubeflow.org_profiles.yaml"
+   apiVersion: apiextensions.k8s.io/v1
+   kind: CustomResourceDefinition
+   metadata: # kpt-merge: /profiles.kubeflow.org
+   annotations:
+   controller-gen.kubebuilder.io/version: v0.8.0
+   internal.kpt.dev/upstream-identifier: 'apiextensions.k8s.io|CustomResourceDefinition|default|profiles.kubeflow.org'
+   creationTimestamp: null # <- Remove this line
+   name: profiles.kubeflow.org
+   spec:
+   ...
+   ```
+   - Reference bug in the [Github issue](https://github.com/kubeflow/kubeflow/issues/7041)
