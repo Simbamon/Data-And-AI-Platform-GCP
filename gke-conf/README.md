@@ -61,5 +61,22 @@
     - rangeName: clusterrange
         ipCidrRange: 10.4.0.0/16
     ```
+
+## Adding TPU node to the GKE cluster
+
+- Grant these following IAM roles to grant access to the Kubeflow:
+    - To access Kubernetes cluster - `roles/clusterViewer`:  
+    ```
+    gcloud projects add-iam-policy-binding <YOUR_PROJECT_NAME> --member=user:<EMAIL> --role=roles/container.clusterViewer
+    ```
+    - To access Kubeflow UI through IAP - `roles/iap.httpsResourceAccessor`:  
+    ```
+    gcloud projects add-iam-policy-binding <YOUR_PROJECT_NAME>--member=user:<EMAIL> --role=roles/iap.httpsResourceAccessor
+    ```
+    - To see the logs in Cloud Logging - `roles/viewer`:  
+    ```
+    gcloud projects add-iam-policy-binding <YOUR_PROJECT_NAME> --member=user:<EMAIL> --role=roles/viewer
+    ```
+
 ## Reference
 * [Customize Kubeflow on Google Cloud](https://googlecloudplatform.github.io/kubeflow-gke-docs/dev/docs/customizing/)
