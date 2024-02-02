@@ -8,6 +8,16 @@ This GitHub repository focuses on Data Operations using Apache Airflow for diver
 
 ## Why Kubeflow instead of Vertex AI
 
+Both Kubeflow and Vertex AI are platforms designed to facilitate the development and deployment of machine learning models, but they have different focuses and use cases. While Vertex AI is a managed AI/ML platform provided by Google Cloud that abstracts away many infrastructure management complexities, I opted for Kubeflow to have more robust control over the underlying infrastructure.
+
+Additionally, despite the complexity of managing infrastructure, using Kubeflow is approximately 30% cheaper than Vertex AI:
+- Training a AI/ML Model: Training a ML model using a dataset of 100GB & Machine type with 4 vCPUs and 16GB memory for 10 hours
+
+   | Service | Cost |
+   | --- | --- |
+   | Vertex AI | $0.19 per hour per vCPU + $0.24 per hour per GB memory|
+   | Kubeflow (GKE) | $0.10 per hour per vCPU + $0.13 per hour per GB memory|
+
 ## Getting Started
 
 Following these instructions will help you set up and run a project for development and testing purposes. 
