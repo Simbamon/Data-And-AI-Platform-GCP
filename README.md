@@ -18,6 +18,20 @@ Additionally, despite the complexity of managing infrastructure, using Kubeflow 
    | Vertex AI | $0.19 per hour per vCPU + $0.24 per hour per GB memory|
    | Kubeflow (GKE) | $0.10 per hour per vCPU + $0.13 per hour per GB memory|
 
+- Serving a AI/ML Model: Serving a ML model that receives 1000 requests per second & Machine type with 2 vCPUs and 8 GB memory.
+
+   | Service | Cost |
+   | --- | --- |
+   | Vertex AI | $0.29 per hour per vCPU + $0.37 per hour per GB memory|
+   | Kubeflow (GKE) | $0.20 per hour per vCPU + $0.26 per hour per GB memory|
+
+- Large Scale Data Processing: Processing 1 TB worth of data & Machine type with 8 vCPUs and 32 GB memory for 24 hours.
+
+   | Service | Cost |
+   | --- | --- |
+   | Vertex AI | $0.38 per hour per vCPU + $0.48 per hour per GB memory|
+   | Kubeflow (GKE) | $0.20 per hour per vCPU + $0.26 per hour per GB memory|
+
 ## Getting Started
 
 Following these instructions will help you set up and run a project for development and testing purposes. 
